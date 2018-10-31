@@ -1,0 +1,26 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3 vertical-center">
+      <div class="thumbnail">
+        <img src="../../{{product.image}}" alt="{{product.name}}">
+        <div class="caption">
+          <h2>{{product.name}}</h2>
+          <p class="price">Rs.{{product.price}}</p>
+         <!--  <p>{{product.desc}}</p> -->
+          <form method="POST" action="../cart/{{product._id}}">
+            <!-- <label for="quantity">Select quantity</label> -->
+        <!--     <select class="form-control product-dropdown" id="quantity" name="quantity">
+              <option>5 gm</option>
+              <option>10 gm</option>
+              <option>25 gm</option>
+              <option>20 gm</option>
+            </select> -->
+            <button class="btn btn-default noPad" type="submit" value="Submit">Add To Cart</button>
+          </form>
+            <a href="/products" class="back-to-products btn btn-default" role="button">Back to all products</a> 
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
